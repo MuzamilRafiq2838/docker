@@ -53,4 +53,10 @@ pipeline {
             }
         }
     }
+    post {
+        always {
+            emailext attachLog: true, body: 'This is extended email', subject: 'This is extended email', to: 'rafiqmuzamil4@gmail.com'
+        }
+    }
 }
+
