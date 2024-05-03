@@ -35,7 +35,7 @@ pipeline {
         stage('Deploy to Staging') {
             steps {
                 // Deploy the application to staging server (e.g., AWS EC2 instance) using AWS CLI
-                echo 'Deploying the application to staging server'
+                echo Deploying the application to staging server'
                 // Example: sh 'aws ec2 deploy ...'
             }
         }
