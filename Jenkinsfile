@@ -28,7 +28,7 @@ pipeline {
         stage('Security Scan') {
             steps {
                 // Perform security scan using a tool like OWASP Dependency-Check
-                echo 'Performing security scan to identify vulnerabilities'
+                echo Performing security scan to identify vulnerabilities
                 // Example: sh 'dependency-check.sh'
             }
         }
