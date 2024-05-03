@@ -56,7 +56,10 @@ pipeline {
     }
     post {
         success {
-            emailext attachLog: true, body: 'This is extended email', subject: 'This is extended email', to: 'rafiqmuzamil4@gmail.com'
+            emailext attachLog: true, body: 'The Build Was Successful', subject: 'there was no problem in build and build was successful', to: 'rafiqmuzamil4@gmail.com'
+        }
+        Failure {
+            emailext attachLog: true, body: 'The Build Was failure', subject: 'there was a problem in build and build failed', to: 'rafiqmuzamil4@gmail.com'
         }
     }
 }
