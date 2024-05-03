@@ -5,7 +5,7 @@ pipeline {
         stage('Build') {
             steps {
                 // Build the code using Maven
-                echo 'Building the code using Muzamil'
+                echo 'Building the code using Maveb'
                 echo 's223034708'
                 // Example: sh 'mvn clean install'
             }
@@ -55,7 +55,7 @@ pipeline {
         }
     }
     post {
-        always {
+        success {
             emailext attachLog: true, body: 'This is extended email', subject: 'This is extended email', to: 'rafiqmuzamil4@gmail.com'
         }
     }
